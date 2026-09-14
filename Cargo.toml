@@ -1,7 +1,12 @@
+# Cargo.toml
 [package]
-name = "WINDOWS_WIDGETS"
-version = "0.1.0"
-edition = "2024"
+name = "desktop-time-widget"
+version = "0.3.0"
+edition = "2021"
 
 [dependencies]
-chrono = "0.4.45"
+eframe = { version = "0.29", features = ["persistence", "wgpu"] }
+egui = "0.29"
+chrono = "0.4"
+serde = { version = "1", features = ["derive"] }
+display-info = "0.5"
